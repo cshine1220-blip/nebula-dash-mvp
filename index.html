@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1026">
+  <meta name="description" content="星躍衝刺：行動優先、可商業化的網頁遊戲 MVP。">
+  <title>星躍衝刺｜網頁遊戲 MVP</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="星躍衝刺首頁">✦ 星躍衝刺</a>
+    <button class="icon-button" id="sound-toggle" type="button" aria-pressed="false" aria-label="切換音效">♬</button>
+  </header>
+
+  <main id="top" class="page-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">DAILY ARCADE</p>
+      <h1 id="game-title">30 秒，追上你的星光。</h1>
+      <p class="intro">點擊出現的光球累積分數；連擊越高，獎勵越多。</p>
+    </section>
+
+    <aside class="ad-slot ad-slot--leaderboard" data-ad-slot="top" aria-label="贊助內容">
+      <span>贊助內容</span><strong>728 × 90 廣告預留區</strong>
+    </aside>
+
+    <section class="game-card" aria-label="星躍衝刺遊戲區">
+      <div class="scoreboard">
+        <div><span>分數</span><strong id="score">0</strong></div>
+        <div><span>連擊</span><strong id="combo">×0</strong></div>
+        <div><span>時間</span><strong id="time">30.0</strong></div>
+      </div>
+      <div class="game-stage" id="game-stage" role="application" aria-label="遊戲場地。開始後點擊光球得分。">
+        <div class="stage-message" id="stage-message">
+          <span class="message-icon">✦</span>
+          <strong>準備好了嗎？</strong>
+          <small>30 秒內盡可能擊中更多光球</small>
+        </div>
+      </div>
+      <div class="game-actions">
+        <button id="start-button" class="button button--primary" type="button">開始挑戰</button>
+        <button id="share-button" class="button button--ghost" type="button" hidden>分享戰績</button>
+      </div>
+      <p class="best-score">今日最佳：<strong id="best-score">0</strong></p>
+    </section>
+
+    <aside class="ad-slot ad-slot--rectangle" data-ad-slot="reward" aria-label="獎勵式廣告預留區">
+      <span>獎勵式廣告預留區</span><strong>完成觀看可獲得一次加時／活動券</strong>
+      <button id="reward-button" type="button" class="text-button">試用獎勵流程</button>
+    </aside>
+
+    <section class="campaigns" aria-labelledby="campaign-title">
+      <div class="section-heading"><div><p class="eyebrow">COMMERCIAL HUB</p><h2 id="campaign-title">今日星光活動</h2></div><span class="tag">可替換內容</span></div>
+      <div class="campaign-grid" id="campaign-grid"></div>
+    </section>
+
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <div><p class="eyebrow">PLAYER CLUB</p><h2 id="newsletter-title">每週任務與合作優惠</h2><p>留下信箱，未來可串接你的 CRM／電子報服務。</p></div>
+      <form id="signup-form" novalidate>
+        <label class="sr-only" for="email">電子郵件</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <button class="button button--primary" type="submit">加入玩家俱樂部</button>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><span>© 2026 星躍衝刺 MVP</span><a href="docs/README.md">專案與商業化說明</a></footer>
+  <dialog id="result-dialog" class="result-dialog">
+    <button class="dialog-close" id="dialog-close" aria-label="關閉">×</button>
+    <p class="eyebrow">RUN COMPLETE</p><h2>本局獲得 <span id="final-score">0</span> 分</h2><p id="result-copy"></p>
+    <button class="button button--primary" id="play-again" type="button">再玩一次</button>
+  </dialog>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
