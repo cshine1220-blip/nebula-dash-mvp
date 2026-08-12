@@ -2,5 +2,6 @@
 .game-stage:before{pointer-events:none}
 .game-stage:before{z-index:0}
 .stage-message[hidden]{display:none}
+.stage-message{pointer-events:none}
 .orb{z-index:2;touch-action:manipulation}
 .floating-ad{position:fixed;right:18px;bottom:18px;z-index:10;width:min(280px,calc(100vw - 36px));padding:20px 18px 16px;border:1px solid #50609a;border-radius:16px;background:#111735;box-shadow:0 16px 45px #020513aa;display:grid;gap:6px}.floating-ad span{color:#7581b4;font-size:.72rem}.floating-ad strong{color:#fff}.floating-ad a{color:var(--cyan);font-size:.85rem;font-weight:700}.floating-ad__close{position:absolute;top:7px;right:9px;border:0;background:transparent;color:var(--muted);font-size:1.25rem;cursor:pointer}
