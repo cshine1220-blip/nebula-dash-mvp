@@ -21,10 +21,6 @@
       <p class="intro">點擊出現的光球累積分數；連擊越高，獎勵越多。</p>
     </section>
 
-    <aside class="ad-slot ad-slot--leaderboard" data-ad-slot="top" aria-label="贊助內容">
-      <span>贊助內容</span><strong>728 × 90 廣告預留區</strong>
-    </aside>
-
     <section class="game-card" aria-label="星躍衝刺遊戲區">
       <div class="scoreboard">
         <div><span>分數</span><strong id="score">0</strong></div>
@@ -45,11 +41,6 @@
       <p class="best-score">今日最佳：<strong id="best-score">0</strong></p>
     </section>
 
-    <aside class="ad-slot ad-slot--rectangle" data-ad-slot="reward" aria-label="獎勵式廣告預留區">
-      <span>獎勵式廣告預留區</span><strong>完成觀看可獲得一次加時／活動券</strong>
-      <button id="reward-button" type="button" class="text-button">試用獎勵流程</button>
-    </aside>
-
     <section class="campaigns" aria-labelledby="campaign-title">
       <div class="section-heading"><div><p class="eyebrow">COMMERCIAL HUB</p><h2 id="campaign-title">今日星光活動</h2></div><span class="tag">可替換內容</span></div>
       <div class="campaign-grid" id="campaign-grid"></div>
@@ -65,6 +56,13 @@
       </form>
     </section>
   </main>
+
+  <aside class="floating-ad" id="floating-ad" data-ad-slot="floating" aria-label="贊助內容">
+    <button class="floating-ad__close" id="close-ad" type="button" aria-label="關閉廣告">×</button>
+    <span>贊助</span>
+    <strong>這裡是懸浮廣告預留區</strong>
+    <a href="#" data-event="floating_ad_click">了解更多 →</a>
+  </aside>
 
   <footer><span>© 2026 星躍衝刺 MVP</span><a href="docs/README.md">專案與商業化說明</a></footer>
   <dialog id="result-dialog" class="result-dialog">

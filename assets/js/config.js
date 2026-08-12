@@ -9,6 +9,6 @@ window.GAME_CONFIG = {
   ads: {
     // 整合廣告平台時，在此保留 slot ID；前端由廣告供應商 SDK 填入對應 data-ad-slot。
     enabled: false,
-    slots: { top: "", reward: "" }
+    slots: { floating: "" }
   }
 };
